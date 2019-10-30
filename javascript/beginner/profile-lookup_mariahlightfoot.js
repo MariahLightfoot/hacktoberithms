@@ -24,10 +24,21 @@ let contacts = [
         "likes": ["JavaScript", "Gaming", "Foxes"]
     }
 ];
+function confirmPropertyPresence(field){
+    for(let i=0; i < contacts.length; i++){
 
-let response = "";
-function look_up_profile(name){
-    
+        if(field === contacts[i][field]){
+            console.log("Found it!");
+        } else {
+            console.log("No such property");
+        }
+
+    }
+     
+}
+
+function look_up_profile(name, field){
+
     for(let i=0; i < contacts.length; i++){
 
         if(name === contacts[i].firstName){
@@ -37,7 +48,10 @@ function look_up_profile(name){
         }
 
     }
+
 }
 
 // Change these values to test your function
+confirmPropertyPresence("likes");
 look_up_profile("Akira");
+//console.log(contacts[1].likes)
