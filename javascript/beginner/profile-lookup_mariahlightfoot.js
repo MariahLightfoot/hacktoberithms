@@ -25,23 +25,35 @@ let contacts = [
     }
 ];
 
-function lookUpProfile(name){
-    for (let i=0; i < contacts.length; i++){
+function look_up_profile(name){
+    for(let i=0; i < contacts.length; i++){
         if(name === contacts[i].firstName){
-            return "YAS";
-        } else {
-            return "No such contact";
+            console.log("YAS B");
         }
     }
 }
-  
-console.log(lookUpProfile("Harry"));
+
+// function lookUpProfile(name){
+//     for (let i=1; i < contacts.length; i++){
+//         if(name === contacts[i].firstName){
+//             return "YAS";
+//         } else {
+//             return "No such contact";
+//         }
+//     }
+// }
+
+console.log(look_up_profile("Kristian"));
+//console.log(contacts.length);
+//console.log(lookUpProfile("Harry"));
+//console.log(contacts[1].firstName);
 //console.log(contacts[0].likes.length);
 
 
 // Change these values to test your function
 //look_up_profile("Akira", "likes")
 
+//ignore for now!
 // if(field === contacts[i][field]){
             //     console.log(`${field}`);
             //     return contacts[i][field];
