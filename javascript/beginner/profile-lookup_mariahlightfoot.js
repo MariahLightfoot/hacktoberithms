@@ -25,15 +25,19 @@ let contacts = [
     }
 ];
 
-function look_up_profile(name, field){
+let response = "";
+function look_up_profile(name){
+    
     for(let i=0; i < contacts.length; i++){
 
         if(name === contacts[i].firstName){
-            console.log(contacts[i][field]);
-        } 
+            console.log("Found it!");
+        } else {
+            console.log("No such contact");
+        }
 
     }
 }
 
 // Change these values to test your function
-look_up_profile("Kristian", "lastName")
+look_up_profile("Akira");
